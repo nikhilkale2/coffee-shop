@@ -20,8 +20,25 @@ function animateHeroabout() {
       delay: 0.7,
     }
   );
+
+  // Order Section Animation
   gsap.fromTo(
     "#Orders #cart-items",
+    {
+      opacity: 0,
+      y: 150,
+    },
+    {
+      opacity: 1,
+      y: -10,
+      duration: 1,
+      delay: 0.7,
+    }
+  );
+
+  // About Section Animation
+  gsap.fromTo(
+    "#About .about-section",
     {
       opacity: 0,
       y: 150,

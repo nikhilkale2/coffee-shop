@@ -484,7 +484,9 @@ form button {
   border: none;
   background-color: #4f0909;
   color: white;
-  box-shadow: 4px 4px 10px grey, -4px -4px 10px grey;
+  box-shadow: 0 0 10px 5px #4f0909;
+}
+form button:hover {
 }
 #message {
   width: 450px;
