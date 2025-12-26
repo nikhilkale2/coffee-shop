@@ -1,4 +1,4 @@
-#Coffee Shop 👉💖
+# Coffee Shop 👉💖
 
 <p> Create a coffe shop website using HTML, CSS and JavaScript.</p>
 
