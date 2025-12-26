@@ -1,0 +1,334 @@
+@media (min-width: 350px) and (max-width: 600px) {
+  .nav-bar {
+    height: 100px;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+  }
+  body {
+    width: 100%;
+  }
+  #MenuBar {
+    display: block;
+    font-size: 45px;
+    color: white;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Sour Gummy", sans-serif;
+    color: white;
+    transition: all 0.6s ease-out;
+  }
+  nav a:hover {
+    background-color: orange;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  .show {
+    display: none;
+  }
+  .show.add {
+    display: block;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    position: absolute;
+    top: 100px;
+    width: 350px;
+    margin-left: 3px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px 10px;
+  }
+  .order div {
+    background-color: yellow;
+    color: black;
+  }
+  /* Hero section start */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 35px;
+    position: relative;
+    top: 140px;
+    left: 20px;
+    text-align: center;
+  }
+  .hero-section h1 {
+    font-size: 65px;
+    font-family: "Yesteryear", cursive;
+    color: orange;
+  }
+  .hero-section h4 {
+    font-size: 40px;
+    font-family: "Leckerli One", cursive;
+  }
+  .hero-section p {
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  .hero-section button {
+    padding: 15px 35px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  .hero-btn {
+    display: flex;
+  }
+  .hero-img {
+    width: 340px;
+    height: 400px;
+    margin-top: 50px;
+  }
+  .hero-img img {
+    width: 100%;
+  }
+
+  /* about page start */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    margin-top: 180px;
+    align-items: center;
+    margin-left: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .about-img {
+    width: 300px;
+    height: 300px;
+  }
+  .about-page h1 {
+    margin-bottom: 30px;
+    margin-left: 80px;
+  }
+
+  /* Menu section style */
+  .menu-section {
+    padding: 30px 10px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+  .menu-section .menu-h1 {
+    margin-bottom: 10px;
+    margin-left: 40px;
+    font-size: 35px;
+  }
+  .item-1 figure {
+    width: 330px;
+    height: 330px;
+  }
+  .item-1 h1 {
+    font-size: 38px;
+  }
+  .item-1 p {
+    font-size: 19px;
+    max-width: 300px;
+    margin-left: 35px;
+    font-family: "Yatra One", system-ui;
+  }
+  .rating {
+    margin-top: 10px;
+  }
+  .rating p {
+    font-size: 25px;
+  }
+  .rating button {
+    position: relative;
+    margin-left: 40px;
+  }
+
+  /* User Section style */
+  .user-section {
+    width: 100%;
+    background-color: white;
+    padding: 30px 20px;
+    margin: 20px 10px;
+  }
+  .user-section .user-h1 {
+    margin-top: 30px;
+    max-width: 250px;
+    padding-bottom: 20px;
+    margin-left: 45px;
+  }
+  .user-opinion {
+    display: flex;
+    gap: 60px;
+    overflow-x: scroll;
+    margin-left: 0px;
+    margin-top: 100px;
+    /* animation: spin 2s infinite linear; */
+  }
+  .user-opinion figure {
+    width: 335px;
+    height: 335px;
+  }
+  .user-opinion figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  /* Gallery Section style */
+  .gallery-section {
+    padding: 20px 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .gallery-section h1 {
+    font-size: 40px;
+    margin-left: 85px;
+  }
+  .gallery-img {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 3px;
+    margin-top: 100px;
+  }
+  .gallery-img .img-1 {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+  }
+
+  /* Contact Section Start */
+
+  .contact-section {
+    padding: 15px 10px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .contact-section h1 {
+    margin-bottom: 30px;
+    margin-left: 70px;
+  }
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-info ul {
+    margin-left: 20px;
+  }
+  .contact-info ul li {
+    font-size: 17px;
+    font-family: "Arial Narrow Bold", sans-serif;
+    opacity: 0.8;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+  form input {
+    width: 320px;
+    height: 45px;
+    padding: 6px 20px;
+  }
+  #message {
+    width: 320px;
+    height: 110px;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  /* Footer Section start */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 14px;
+    border-radius: 3px;
+  }
+  .footer-text p {
+    font-size: 19px;
+    font-family: "Arial Narrow Bold", sans-serif;
+  }
+
+  .footer-icon i {
+    font-size: 25px;
+  }
+  .footer-copy {
+    display: flex;
+    gap: 25px;
+  }
+  .footer-copy p {
+    font-size: 19px;
+    font-family: "Arial Narrow Bold", sans-serif;
+  }
+
+  /* Order page styles */
+
+  .container {
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    bottom: 320px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 16px 6px;
+    box-shadow: 0px 0px 10px 8px #00000045;
+  }
+
+  .itemName {
+    font-family: "Delius Swash Caps", cursive;
+  }
+  .itemIndex {
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .itemBtn {
+    width: 180px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 17px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  .itemBtn:hover {
+    background-color: black;
+    color: white;
+  }
+  .itemprice {
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .itemqty {
+    font-size: 23px;
+    font-weight: 700;
+  }
+}

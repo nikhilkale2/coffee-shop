@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/previews/031/740/626/non_2x/coffee-cup-logo-design-template-premium-coffee-shop-logo-free-vector.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epunda+Slab:wght@300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Parisienne&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Yesteryear&display=swap"
+      rel="stylesheet"
+    />
+    <title>Coffee Shop</title>
+  </head>
+  <body>
+    <!-- navbar section start -->
+    <div class="nav-bar" id="navBar" data-scroll-sticky data-scroll-target>
+      <div class="web-logo">
+        <img src="coffie-logo.jpg" alt="" />
+        <h5>Coffee</h5>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-bars" id="MenuBar"></i>
+      </div>
+      <nav id="NavLink" class="show">
+        <a href="#" data-target="Home" class="link">Home</a>
+        <a href="#" data-target="Menu" class="link">Menu</a>
+        <a href="#" data-target="About" class="link">About</a>
+        <a href="#" data-target="Testimonials" class="link">Testimonials</a>
+        <a href="#" data-target="Gallery" class="link">Gallery</a>
+        <a href="#" data-target="Contact" class="link">Contact</a>
+
+        <!-- Order html page -->
+        <div class="order">
+          <a href="/order.html"> <i class="fa-solid fa-heart heart"></i></a>
+          <div><span id="cart-count">0</span></div>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar section End -->
+
+    <!-- Main section for locomotive-scroll effect -->
+
+    <div id="main" data-scroll data-scroll-container>
+      <!-- Hero and page-1 section start -->
+
+      <!-- Scroll Button -->
+
+      <div class="Button" id="Button">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+
+      <div id="page-1">
+        <div class="hero-section" id="Home">
+          <div class="hero-info">
+            <h1>Best Coffee</h1>
+            <h4>Make your day great with <br />our special coffee!</h4>
+            <p>
+              welcome to coffee paradise, where every bin tells a story and
+              every cup sparks joy
+            </p>
+            <div class="hero-btn">
+              <a href="#Menu"
+                ><button class="hero-button active">Order Now</button></a
+              >
+              <a href="#Contact">
+                <button class="hero-button-2">Contact Us</button></a
+              >
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="coffee-hero.png" alt="" />
+          </div>
+        </div>
+        <!-- about section start -->
+        <section id="About">
+          <div class="about-section">
+            <div class="about-img">
+              <img
+                src="https://th.bing.com/th/id/OIP.XCAYdAhDeJ_Stfrwc5VEDwHaGI?w=241&h=200&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1"
+                alt=""
+              />
+            </div>
+            <div class="about-page">
+              <h1>ABOUT US</h1>
+              <p>
+                At coffee house in berndorf, germany, we proud ourselves on
+                being go to destination for coffee lovers and conversation
+                seekers alike.we're dedicated to providing an exceptional coffee
+                experience in cozy and inviting atomsphere, where guest can
+                relax, unwind, and enjoy their time in comfort.
+              </p>
+              <div class="about-icons">
+                <i class="fa-brands fa-facebook facebook"></i>
+                <i class="fa-brands fa-instagram instagram"></i>
+                <i class="fa-brands fa-square-x-twitter twitter"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- about section End -->
+      </div>
+      <!-- Hero section End -->
+
+      <!-- Menu section start -->
+      <div class="menu-section" id="Menu">
+        <h2 class="menu-h1">OUR MENU</h2>
+        <div class="menu-items">
+          <!-- Item no 1 -->
+          <div
+            class="item-1"
+            data-name="Hot Beverages"
+            data-price="299"
+            data-image="baverages.png"
+          >
+            <figure>
+              <img src="baverages.png" alt="" />
+            </figure>
+            <h1>Hot Beverages</h1>
+            <p>wide range of steaming hot coffee to make you fresh and light</p>
+            <div class="rating">
+              <p>₹299</p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <button class="orderBtn">Order</button>
+            </div>
+          </div>
+          <!-- Item no 2 -->
+          <div
+            class="item-1"
+            data-name="Cold Beverages"
+            data-price="130"
+            data-image="cold-1.png"
+          >
+            <figure>
+              <img src="cold-1.png" alt="" />
+            </figure>
+            <h1>Cold Beverages</h1>
+            <p>creamy and frothy cold coffee to make you cool.</p>
+            <div class="rating">
+              <p>₹130</p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <button class="orderBtn">Order</button>
+            </div>
+          </div>
+          <!-- Item no 3 -->
+          <div
+            class="item-1"
+            data-name="Refreshment"
+            data-price="199"
+            data-image="refreshment.png"
+          >
+            <figure>
+              <img src="refreshment.png" alt="" />
+            </figure>
+            <h1>Refreshment</h1>
+            <p>fruit and icy refreshment drink to make feel refresh.</p>
+            <div class="rating">
+              <p>₹199</p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <button class="orderBtn">Order</button>
+            </div>
+          </div>
+          <!-- Item no 4 -->
+          <div
+            class="item-1"
+            data-name="Special Combos"
+            data-price="399"
+            data-image="burgers.png"
+          >
+            <figure>
+              <img src="burger-combo.png" alt="" />
+            </figure>
+            <h1>Special Combos</h1>
+            <p>Your favorite eating and drinking combinations.</p>
+            <div class="rating">
+              <p>₹399</p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <button class="orderBtn">Order</button>
+            </div>
+          </div>
+          <!-- Item no 5 -->
+          <div
+            class="item-1"
+            data-name="Dessert"
+            data-price="99"
+            data-image="dessert.png"
+          >
+            <figure>
+              <img src="dessert.png" alt="" />
+            </figure>
+            <h1>Dessert</h1>
+            <p>Satiate your palate take you on a cullinary treat.</p>
+            <div class="rating">
+              <p>₹99</p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <button class="orderBtn">Order</button>
+            </div>
+          </div>
+          <!-- Item no 6 -->
+          <div
+            class="item-1"
+            data-name="Burger and French rise"
+            data-price="299"
+            data-image="birgers-french_rise.png"
+          >
+            <figure>
+              <img src="birgers-french_rise.png" alt="" />
+            </figure>
+            <h1>Burger and French rise.</h1>
+            <p>Quick by and satisfy your small size hunger.</p>
+            <div class="rating">
+              <p>₹299</p>
+              <p>⭐⭐⭐⭐⭐</p>
+              <button class="orderBtn">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Menu section End -->
+
+      <!-- User section start -->
+      <div class="user-section" id="Testimonials">
+        <h1 class="user-h1">TESTIMONIALS</h1>
+        <div class="user-opinion">
+          <div class="users">
+            <figure>
+              <img src="user-1" alt="" />
+            </figure>
+            <h1>James wilson</h1>
+            <p>
+              "Great espresso blend! smooth and bold flavor. fast shipping
+              tool.""
+            </p>
+          </div>
+          <div class="users">
+            <figure>
+              <img src="user-2" alt="" />
+            </figure>
+            <h1>Michal brown</h1>
+            <p>"Fantastic mocha flavor. fresh and aromatic.Quick shipping.""</p>
+          </div>
+          <div class="users">
+            <figure>
+              <img src="user-3" alt="" />
+            </figure>
+            <h1>Michal bracewell</h1>
+            <p>
+              "Excellent Quality! fresh beans and quick delivery highly
+              recommended."
+            </p>
+          </div>
+          <div class="users">
+            <figure>
+              <img src="user-4.jpg" alt="" />
+            </figure>
+            <h1>Alex Carey</h1>
+            <p>
+              Great espresso blend! smooth and bold flavor. fast shipping tool
+            </p>
+          </div>
+          <div class="users">
+            <figure>
+              <img src="user-5" alt="" />
+            </figure>
+            <h1>Alexa Healy</h1>
+            <p>
+              Great espresso blend! smooth and bold flavor. fast shipping tool
+            </p>
+          </div>
+          <div class="users">
+            <figure>
+              <img src="user-6.jpg" alt="" />
+            </figure>
+            <h1>Ellise perry</h1>
+            <p>
+              Great espresso blend! smooth and bold flavor. fast shipping tool
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- User section End -->
+
+      <!-- Gallery section start -->
+      <div class="gallery-section" id="Gallery">
+        <h1 class="gallery-h1">Gallery</h1>
+        <div class="gallery-img">
+          <div class="img-1">
+            <img src="coledcoffee.png" alt="" />
+          </div>
+          <div class="img-1">
+            <img src="coffee-shop" alt="" />
+          </div>
+          <div class="img-1">
+            <img src="coffe-shop-2.webp" alt="" />
+          </div>
+          <div class="img-1">
+            <img src="coffee-shop-4.jpg" alt="" />
+          </div>
+          <div class="img-1">
+            <img src="coffee-shop-3" alt="" />
+          </div>
+          <div class="img-1">
+            <img src="coffee-shop-5" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Gallery section End -->
+
+      <!-- Contact us section start -->
+      <div class="contact-section" id="Contact">
+        <h1>Contact Us</h1>
+
+        <div class="contact-box">
+          <div class="contact-info">
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-crosshairs"></i>123 Complete
+                Avenue, wikderness, CA 98765.
+              </li>
+              <li>
+                <i class="fa-regular fa-envelope"></i>info@coffeeshopwebsite.com
+              </li>
+              <li><i class="fa-solid fa-phone"></i>(123) 456-78090</li>
+              <li>
+                <i class="fa-regular fa-clock"></i>Monday - Friday: 9:00 AM -
+                5:00 PM
+              </li>
+              <li>
+                <i class="fa-regular fa-clock"></i>Saturday: 10:00 AM - 3:00 PM
+              </li>
+              <li><i class="fa-regular fa-clock"></i>Sunday Closed</li>
+            </ul>
+          </div>
+          <div class="contact-form">
+            <form action="">
+              <input type="text" placeholder="Enter your name" id="inputName" />
+              <input
+                type="email"
+                placeholder="Enter your Email"
+                id="inputName"
+              />
+              <textarea
+                placeholder="Enter your message"
+                id="message"
+              ></textarea>
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- contact section end -->
+
+      <!-- Footer section start -->
+      <footer>
+        <div class="footer-text">
+          <p>@2026 coffee shop</p>
+        </div>
+        <div class="footer-icon">
+          <i class="fa-brands fa-facebook facebook" title="Facebook"></i>
+          <i class="fa-brands fa-instagram instagram" title="Instagram"></i>
+          <i class="fa-brands fa-square-x-twitter twitter" title="Twitter"></i>
+        </div>
+        <div class="footer-copy">
+          <p>Privacy policy</p>
+          <p>Refund policy</p>
+        </div>
+      </footer>
+      <!-- Footer section end -->
+    </div>
+
+    <!-- Locomotive scroll js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- GSAP animation script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

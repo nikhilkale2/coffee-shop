@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://static.vecteezy.com/system/resources/previews/031/740/626/non_2x/coffee-cup-logo-design-template-premium-coffee-shop-logo-free-vector.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epunda+Slab:wght@300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Parisienne&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Yesteryear&display=swap"
+      rel="stylesheet"
+    />
+    <title>Coffee Shop</title>
+  </head>
+  <body>
+    <!-- navbar section start -->
+    <div class="nav-bar" id="navBar">
+      <div class="web-logo">
+        <img src="coffie-logo.jpg" alt="" />
+        <a href="index.html"> <h5>Coffee</h5></a>
+      </div>
+      <div class="icon">
+        <i class="fa-solid fa-bars" id="MenuBar"></i>
+      </div>
+      <nav id="NavLink" class="show">
+        <a href="index.html">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+        <div class="order">
+          <a href="/order.html"> <i class="fa-solid fa-heart heart"></i></a>
+          <div><span id="cart-count">0</span></div>
+        </div>
+      </nav>
+    </div>
+    <!-- navbar section End -->
+    <div id="main" data-scroll data-scroll-container>
+      <!-- Scroll Button -->
+      <div class="Button" id="Button">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+
+      <section id="Orders">
+        <h1>⭐ ORDERS ⭐</h1>
+        <div id="cart-items"></div>
+      </section>
+      <!-- Footer section start -->
+      <footer class="Footer-1">
+        <div class="footer-text">
+          <p>@2026 coffee shop</p>
+        </div>
+        <div class="footer-icon">
+          <i class="fa-brands fa-facebook facebook" title="Facebook"></i>
+          <i class="fa-brands fa-instagram instagram" title="Instagram"></i>
+          <i class="fa-brands fa-square-x-twitter twitter" title="Twitter"></i>
+        </div>
+        <div class="footer-copy">
+          <p>Privacy policy</p>
+          <p>Refund policy</p>
+        </div>
+      </footer>
+      <!-- Footer section end -->
+    </div>
+
+    <!-- Locomotive scroll js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- GSAP animation script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
