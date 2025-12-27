@@ -31,25 +31,42 @@ function animateHeroabout() {
     {
       opacity: 1,
       y: -10,
-      duration: 1,
+      duration: 1.2,
       delay: 0.7,
     }
   );
 
   // About Section Animation
-  gsap.fromTo(
-    "#About .about-section",
-    {
-      opacity: 0,
-      y: 150,
-    },
-    {
-      opacity: 1,
-      y: -10,
-      duration: 1,
-      delay: 0.7,
-    }
-  );
+  gsap.from("#About", {
+    opacity: 0,
+    y: -350,
+    duration: 1,
+    delay: 1.9,
+  });
+
+  gsap.from(".item-1", {
+    opacity: 0,
+    y: -450,
+    duration: 1.1,
+    stagger: 0.3,
+    delay: 3.8,
+  });
+
+  gsap.from(".users", {
+    opacity: 0,
+    y: -500,
+    duration: 0.9,
+    stagger: 0.4,
+    delay: 7.7,
+  });
+
+  gsap.from(".img-1", {
+    opacity: 0,
+    y: 500,
+    duration: 1.9,
+    stagger: 0.4,
+    delay: 9.9,
+  });
 }
 
 animateHeroabout();

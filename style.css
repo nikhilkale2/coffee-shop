@@ -94,11 +94,13 @@ a:hover .heart {
   position: relative;
   right: 32px;
   top: 10px;
+  cursor: pointer;
 }
 .order div span {
   position: relative;
   bottom: 4px;
   right: 3px;
+  cursor: pointer;
 }
 
 /* Scroll button style */
@@ -178,20 +180,26 @@ a:hover .heart {
   margin-top: 30px;
   margin-left: 10px;
   border-radius: 20px;
-  border: 2px solid white;
+  border: 2px solid orange;
   color: white;
   background: transparent;
   transition: all 0.5s ease-in-out 0s;
+  /* box-shadow: 0 0 7px 3px orange; */
 }
 .hero-section .hero-btn .active {
   background-color: orange;
 }
 .hero-section .hero-btn .hero-button:hover {
   background-color: transparent;
+  box-shadow: 0 0 7px 3px #4f0909;
+}
+.hero-section .hero-button-2 {
+  box-shadow: 0 0 7px 3px #4f0909;
 }
 .hero-section .hero-button-2:hover {
   background-color: orange;
   color: white;
+  box-shadow: 0 0 7px 3px #4f0909;
 }
 
 /* about image section start */
