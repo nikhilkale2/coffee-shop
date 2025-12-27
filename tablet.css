@@ -1,0 +1,6 @@
+/* LARGE SCREEN MEDIA QUERY */
+@media (min-width: 1440px) {
+  body {
+    width: 100vw;
+  }
+}

@@ -83,7 +83,7 @@ a:hover .heart {
   align-items: center;
 }
 .order div {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   background-color: green;
   padding: 5px;
@@ -97,7 +97,8 @@ a:hover .heart {
 }
 .order div span {
   position: relative;
-  bottom: 7px;
+  bottom: 4px;
+  right: 3px;
 }
 
 /* Scroll button style */
@@ -355,14 +356,7 @@ a:hover .heart {
   text-align: center;
   /* animation: spin 2s infinite linear; */
 }
-/* @keyframes spin {
-  from {
-    translate: 0;
-  }
-  to {
-    translate: -100%;
-  }
-} */
+
 .user-opinion figure {
   width: 360px;
   height: 360px;
@@ -486,8 +480,7 @@ form button {
   color: white;
   box-shadow: 0 0 10px 5px #4f0909;
 }
-form button:hover {
-}
+
 #message {
   width: 450px;
   height: 110px;

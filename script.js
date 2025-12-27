@@ -62,8 +62,13 @@ let isclick = false;
 MenuBar.addEventListener("click", () => {
   if (isclick) {
     NavLink.classList.remove("add");
+    MenuBar.style.color = "white";
+    MenuBar.setAttribute("class", "fa-solid fa-bars");
+    //MenuBar.innerHTML = '<i class="fa-solid fa-bars"></i>';
   } else {
     NavLink.classList.add("add");
+    MenuBar.style.color = "red";
+    MenuBar.setAttribute("class", "fa-solid fa-xmark");
   }
   isclick = !isclick;
 });
