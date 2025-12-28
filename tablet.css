@@ -1,6 +1,312 @@
-/* LARGE SCREEN MEDIA QUERY */
-@media (min-width: 1440px) {
+/* ====LARGE SCREEN STYLING====*/
+@media (min-width: 1540px) {
   body {
-    width: 100vw;
+    width: 100%;
+  }
+  /* Navbar styling */
+  .nav-bar {
+    height: 120px;
+  }
+  .web-logo h5 {
+    font-size: 53px;
+  }
+  .web-logo {
+    width: 90px;
+    height: 90px;
+  }
+  #MenuBar {
+    display: none;
+  }
+  nav a {
+    font-size: 37px;
+    margin-left: 30px;
+  }
+  nav a:hover {
+    background-color: orange;
+  }
+
+  .order .counter-box {
+    background-color: green;
+    color: white;
+  }
+  .order i {
+    font-size: 45px;
+  }
+  .order .counter-box {
+    font-size: 28px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 40px;
+    top: 14px;
+    cursor: pointer;
+  }
+  /* Hero section start */
+
+  .hero-img {
+    width: 900px;
+    height: 900px;
+  }
+
+  .hero-section h1 {
+    font-size: 95px;
+  }
+
+  .hero-section h4 {
+    font-size: 60px;
+  }
+
+  .hero-section p {
+    max-width: 560px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .hero-section .hero-btn button {
+    width: 240px;
+    height: 65px;
+    font-size: 25px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+
+  /* about image section start */
+  .about-section {
+    justify-content: space-evenly;
+  }
+  .about-img {
+    width: 700px;
+    height: 700px;
+  }
+
+  .about-page p {
+    max-width: 740px;
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .about-page h1 {
+    margin-bottom: 40px;
+    margin-left: 250px;
+  }
+  .about-icons {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  .about-icons i {
+    font-size: 45px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* menu section start */
+
+  .menu-section {
+    padding: 30px 100px;
+    width: 100%;
+  }
+  .menu-section .menu-h1 {
+    margin-bottom: 100px;
+    min-width: 300px;
+    margin-left: 45%;
+    font-size: 50px;
+  }
+
+  .item-1 figure {
+    width: 600px;
+    height: 600px;
+  }
+
+  .item-1 h1 {
+    margin-bottom: 14px;
+    font-size: 50px;
+  }
+  .item-1 p {
+    font-size: 25px;
+    max-width: 400px;
+    margin-left: 110px;
+  }
+  .rating {
+    margin-top: 15px;
+  }
+  .rating p {
+    font-size: 32px;
+  }
+  .rating button {
+    width: 250px;
+    height: 55px;
+    font-size: 26px;
+    margin-top: 25px;
+  }
+  /*====> user Section start <====*/
+
+  .user-section {
+    width: 100%;
+    padding: 30px 10px;
+  }
+  .user-section .user-h1 {
+    font-size: 50px;
+  }
+  .user-opinion {
+    display: flex;
+    gap: 60px;
+    overflow-x: visible;
+    margin-left: 20px;
+    margin-top: 70px;
+  }
+
+  .user-opinion figure {
+    width: 300px;
+    height: 300px;
+  }
+  .user-opinion h1 {
+    margin: 20px 0;
+    font-family: "Yatra One", system-ui;
+  }
+  .user-opinion p {
+    font-family: "Yatra One", system-ui;
+    font-size: 20px;
+  }
+  /*====> Gallery section  <====*/
+
+  .gallery-section {
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .gallery-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 100px;
+    margin-top: 60px;
+  }
+  .gallery-img .img-1 {
+    min-width: 600px;
+    min-height: 450px;
+    overflow: hidden;
+  }
+  .gallery-section {
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .gallery-section h1 {
+    font-size: 50px;
+    color: white;
+    border-bottom: 4px solid gold;
+    width: 190px;
+    padding-bottom: 12px;
+    margin-left: 45%;
+  }
+
+  .gallery-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 150px;
+    margin-top: 100px;
+  }
+  .gallery-img .img-1 {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+  }
+
+  /*====> Contact Section Start <====*/
+
+  .contact-section {
+    width: 100%;
+    padding: 10px 30px;
+  }
+
+  .contact-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    min-width: 350px;
+  }
+
+  .contact-info ul {
+    list-style-type: none;
+    line-height: 50px;
+    text-align: justify;
+  }
+  .contact-info ul li {
+    font-size: 27px;
+  }
+  .contact-info ul li i {
+    margin-right: 25px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  form input {
+    width: 480px;
+    height: 60px;
+    font-size: 22px;
+  }
+
+  form button {
+    width: 180px;
+    height: 50px;
+  }
+
+  #message {
+    width: 480px;
+    height: 140px;
+    font-size: 22px;
+  }
+  /*====> Footer sectio start <====*/
+
+  footer {
+    height: 100px;
+    width: 100%;
+  }
+  .footer-text p {
+    font-size: 28px;
+  }
+
+  .footer-icon i {
+    font-size: 35px;
+    margin-left: 15px;
+  }
+
+  .footer-copy p {
+    font-size: 28px;
+    font-family: "Arial Narrow Bold", sans-serif;
+  }
+
+  /*c Order.html page start <====*/
+
+  /*====> Orders section start <====*/
+
+  #Orders h1 {
+    font-size: 50px;
+    margin-top: 80px;
+  }
+
+  /*====>  Add to cart section <====*/
+
+  .container {
+    font-size: 30px;
+  }
+  .itemimg {
+    width: 200px;
+    height: 200px;
+  }
+
+  .itemIndex {
+    font-size: 30px;
+  }
+  .itemBtn {
+    width: 220px;
+    height: 50px;
+    font-size: 24 px;
   }
 }

@@ -103,36 +103,6 @@ a:hover .heart {
   cursor: pointer;
 }
 
-/* Scroll button style */
-.Button {
-  /* background-color: #06f4f0; */
-  border: 2px solid black;
-  background: black;
-  box-shadow: 0 0 10px 5px orange;
-  color: white;
-  font-weight: 900;
-  border-radius: 5px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 18px;
-  transition: all 0.5s ease-in-out 0s;
-  display: none;
-  z-index: 100;
-}
-.Button:hover {
-  background-color: #06f4f0;
-  border: 2px solid #06f4f0;
-  color: black;
-  cursor: pointer;
-}
-.Button i {
-  font-size: 20px;
-}
-
 /* Hero section start */
 .hero-section {
   display: flex;
@@ -322,7 +292,6 @@ a:hover .heart {
 }
 .rating button {
   position: relative;
-  /*veryimportant*/
   width: 180px;
   height: 45px;
   font-size: 22px;
@@ -547,7 +516,6 @@ footer {
   padding: 8px;
   margin-bottom: 350px;
   margin-top: 20px;
-  /* background-color: white; */
 }
 
 /* Add to cart section */

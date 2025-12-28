@@ -7,43 +7,34 @@ const scroll = new LocomotiveScroll({
 
 // GSAP Animation for Hero and About section
 function animateHeroabout() {
-  gsap.fromTo(
-    "#page-1 .hero-section",
-    {
-      opacity: 0,
-      y: 100,
-    },
-    {
-      opacity: 1,
-      y: -30,
-      duration: 1,
-      delay: 0.7,
-    }
-  );
+  // Hero section animation
+  gsap.from(".hero-section", {
+    opacity: 0,
+    y: -400,
+    duration: 1,
+    delay: 0.8,
+  });
 
-  // Order Section Animation
-  gsap.fromTo(
-    "#Orders #cart-items",
-    {
-      opacity: 0,
-      y: 150,
-    },
-    {
-      opacity: 1,
-      y: -10,
-      duration: 1.2,
-      delay: 0.7,
-    }
-  );
+  // order page section styling
+
+  gsap.from("#cart-items", {
+    opacity: 0,
+    y: 500,
+    scale: -3,
+    duration: 1.2,
+    delay: 0.4,
+  });
 
   // About Section Animation
-  gsap.from("#About", {
+  gsap.from(".about-coffee", {
     opacity: 0,
-    y: -350,
+    y: -250,
     duration: 1,
+    stagger: 0.4,
     delay: 1.9,
   });
 
+  // Menu Section Animation
   gsap.from(".item-1", {
     opacity: 0,
     y: -450,
@@ -57,7 +48,7 @@ function animateHeroabout() {
     y: -500,
     duration: 0.9,
     stagger: 0.4,
-    delay: 7.7,
+    delay: 7.4,
   });
 
   gsap.from(".img-1", {
@@ -66,6 +57,14 @@ function animateHeroabout() {
     duration: 1.9,
     stagger: 0.4,
     delay: 9.9,
+  });
+
+  gsap.from(".contact-sec", {
+    opacity: 0,
+    y: 200,
+    duration: 0.8,
+    delay: 12,
+    stagger: 0.2,
   });
 }
 
@@ -81,7 +80,6 @@ MenuBar.addEventListener("click", () => {
     NavLink.classList.remove("add");
     MenuBar.style.color = "white";
     MenuBar.setAttribute("class", "fa-solid fa-bars");
-    //MenuBar.innerHTML = '<i class="fa-solid fa-bars"></i>';
   } else {
     NavLink.classList.add("add");
     MenuBar.style.color = "red";

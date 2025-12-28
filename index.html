@@ -49,7 +49,7 @@
         <!-- Order html page -->
         <div class="order">
           <a href="/order.html"> <i class="fa-solid fa-heart heart"></i></a>
-          <div><span id="cart-count">0</span></div>
+          <div class="counter-box"><span id="cart-count">0</span></div>
         </div>
       </nav>
     </div>
@@ -58,12 +58,6 @@
 
     <div id="main" data-scroll data-scroll-container>
       <!-- Hero and page-1 section start -->
-
-      <!-- Scroll Button -->
-
-      <!-- <div class="Button" id="Button">
-        <i class="fa-solid fa-arrow-up"></i>
-      </div> -->
 
       <div id="page-1">
         <div class="hero-section" id="Home">
@@ -93,10 +87,10 @@
       <!-- about section start -->
       <section id="About">
         <div class="about-section">
-          <div class="about-img">
+          <div class="about-img about-coffee">
             <img src="about-coffee.png" alt="" />
           </div>
-          <div class="about-page">
+          <div class="about-page about-coffee">
             <h1>ABOUT US</h1>
             <p>
               At coffee house in berndorf, germany, we proud ourselves on being
@@ -106,9 +100,12 @@
               unwind, and enjoy their time in comfort.
             </p>
             <div class="about-icons">
-              <i class="fa-brands fa-facebook facebook"></i>
-              <i class="fa-brands fa-instagram instagram"></i>
-              <i class="fa-brands fa-square-x-twitter twitter"></i>
+              <i class="fa-brands fa-facebook facebook" title="facebook"></i>
+              <i class="fa-brands fa-instagram instagram" title="instagram"></i>
+              <i
+                class="fa-brands fa-square-x-twitter twitter"
+                title="twitter"
+              ></i>
             </div>
           </div>
         </div>
@@ -324,7 +321,7 @@
         <h1>Contact Us</h1>
 
         <div class="contact-box">
-          <div class="contact-info">
+          <div class="contact-info contact-sec">
             <ul>
               <li>
                 <i class="fa-solid fa-location-crosshairs"></i>123 Complete
@@ -344,7 +341,7 @@
               <li><i class="fa-regular fa-clock"></i>Sunday Closed</li>
             </ul>
           </div>
-          <div class="contact-form">
+          <div class="contact-form contact-sec">
             <form action="">
               <input type="text" placeholder="Enter your name" id="inputName" />
               <input
