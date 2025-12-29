@@ -1,5 +1,7 @@
 // Locomotive Scroll Initialization
 
+// const { use } = require("react");
+
 const scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
@@ -20,7 +22,7 @@ function animateHeroabout() {
   gsap.from("#cart-items", {
     opacity: 0,
     y: 500,
-    scale: -3,
+    scale: 2,
     duration: 1.2,
     delay: 0.4,
   });
@@ -48,7 +50,7 @@ function animateHeroabout() {
     y: -500,
     duration: 0.9,
     stagger: 0.4,
-    delay: 7.4,
+    delay: 6.4,
   });
 
   gsap.from(".img-1", {
@@ -56,7 +58,7 @@ function animateHeroabout() {
     y: 500,
     duration: 1.9,
     stagger: 0.4,
-    delay: 9.9,
+    delay: 9,
   });
 
   gsap.from(".contact-sec", {
@@ -121,7 +123,10 @@ itemCount();
 // Order button functionality
 
 let OrderButtons = document.querySelectorAll(".orderBtn");
-
+const overlay = document.getElementById("overlay");
+const closeBtn = document.getElementById("closePopup");
+let popupname = document.querySelector("#popupname");
+let popupprice = document.querySelector("#popupprice");
 OrderButtons.forEach((button) => {
   button.addEventListener("click", function () {
     let item = this.closest(".item-1");
@@ -130,11 +135,18 @@ OrderButtons.forEach((button) => {
     let price = Number(item.dataset.price);
     let image = item.dataset.image;
 
+    overlay.classList.add("active");
+    popupname.textContent = `Name: ${name}`;
+    popupprice.textContent = `Price: ${price}`;
+
+    closeBtn.addEventListener("click", () => {
+      overlay.classList.remove("active");
+    });
+
     addToCart(name, price, image);
   });
 });
 
-// Add to cart function
 function addToCart(name, price, image) {
   let cart = getCart();
 
@@ -186,6 +198,7 @@ function displayItem() {
     itemBtn.classList.add("itemBtn");
     itemBtn.innerText = "Cancle";
     itemBtn.addEventListener("click", () => removeItem(index));
+
     container.appendChild(itemIndexP);
     container.appendChild(itemName);
     container.appendChild(itemimg);
@@ -198,7 +211,6 @@ function displayItem() {
 }
 
 displayItem();
-
 // Remove item from cart function
 
 function removeItem(index) {
@@ -207,16 +219,5 @@ function removeItem(index) {
   saveCart(cart);
   displayItem();
   itemCount();
+  popupfunction();
 }
-
-// Scroll button functionality
-
-let scrollBtn = document.querySelector("#Button");
-
-scroll.on("scroll", (obj) => {
-  if (obj.scroll.y >= 100) {
-    scrollBtn.style.display = "block";
-  } else {
-    scrollBtn.style.display = "none";
-  }
-});
