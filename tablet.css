@@ -139,6 +139,27 @@
     font-size: 26px;
     margin-top: 25px;
   }
+
+  /*====> Booking table Section start <====*/
+
+  .Book-table {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  .Book-table-img img {
+    width: 900px;
+    height: 800px;
+    border-radius: 5%;
+    margin-bottom: 30px;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+  }
+
   /*====> user Section start <====*/
 
   .user-section {

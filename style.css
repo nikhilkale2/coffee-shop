@@ -221,9 +221,9 @@ a:hover .heart {
   -o-transition: all 0.5s ease-in-out;
 }
 .about-icons i:hover {
-  text-shadow: 5px 5px 10px gold, -5px -5px 10px gold;
+  /* text-shadow: 5px 5px 10px gold, -5px -5px 10px gold; */
   transform: scale(1.3);
-  -webkit-transform: scale(1.3);
+  -webkit-transform: scale(1.2);
   -moz-transform: scale(1.3);
   -ms-transform: scale(1.3);
   -o-transform: scale(1.3);
@@ -236,6 +236,40 @@ a:hover .heart {
 }
 .about-icons .twitter {
   color: black;
+}
+
+/* Booking table section styling */
+
+.Book-table {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(145deg, #00ffff, #7fffd4, #00bfff, #ffffff);
+  padding: 30px;
+}
+.Book-table-img img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.Book-table-info {
+  max-width: 550px;
+  line-height: 30px;
+}
+.Book-table-form h1 {
+  font-size: 60px;
+  font-family: "Yesteryear", cursive;
+  margin-bottom: 20px;
+}
+
+.Book-table-form {
+  box-shadow: 0 0 40px 8px deepskyblue;
+  padding: 20px;
+  text-align: center;
 }
 
 /* menu section start */
@@ -576,11 +610,9 @@ footer {
 /* Overlay */
 .overlay {
   position: fixed;
-  inset: 0;
+  top: 100px;
+  right: 30px;
   background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   pointer-events: none;
   transition: 0.3s ease;
@@ -588,6 +620,9 @@ footer {
 
 /* Popup box */
 .popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
   padding: 25px;
   width: 320px;
@@ -614,9 +649,14 @@ footer {
 .close-btn {
   margin-top: 15px;
   padding: 8px 20px;
+  width: 100%;
   border: none;
   background: #ef4444;
   color: white;
   border-radius: 5px;
   cursor: pointer;
+}
+.item-image {
+  width: 100px;
+  height: 100px;
 }

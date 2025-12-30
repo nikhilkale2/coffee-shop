@@ -9,63 +9,72 @@ const scroll = new LocomotiveScroll({
 
 // GSAP Animation for Hero and About section
 function animateHeroabout() {
+  const element = gsap.timeline();
   // Hero section animation
-  gsap.from(".hero-section", {
+  element.from(".hero-section", {
     opacity: 0,
     y: -400,
     duration: 1,
-    delay: 0.8,
+    delay: 1,
   });
 
   // order page section styling
 
-  gsap.from("#cart-items", {
+  element.from("#cart-items", {
     opacity: 0,
     y: 500,
     scale: 2,
     duration: 1.2,
-    delay: 0.4,
+    // delay: 0.4,
   });
 
   // About Section Animation
-  gsap.from(".about-coffee", {
+  element.from(".about-coffee", {
     opacity: 0,
     y: -250,
     duration: 1,
     stagger: 0.4,
-    delay: 1.9,
+    // delay: 1.9,
   });
 
   // Menu Section Animation
-  gsap.from(".item-1", {
+  element.from(".item-1", {
     opacity: 0,
     y: -450,
     duration: 1.1,
     stagger: 0.3,
-    delay: 3.8,
+    // delay: 3.9,
   });
 
-  gsap.from(".users", {
+  element.from(".coffe-table-book", {
+    opacity: 0,
+    y: 300,
+    stagger: 0.5,
+    duration: 1.2,
+    // delay: 7.5,
+  });
+
+  element.from(".users", {
     opacity: 0,
     y: -500,
     duration: 0.9,
     stagger: 0.4,
-    delay: 6.4,
+    // delay: 8.4,
   });
 
-  gsap.from(".img-1", {
+  element.from(".img-1", {
     opacity: 0,
     y: 500,
     duration: 1.9,
     stagger: 0.4,
-    delay: 9,
+    // delay: 10,
   });
 
-  gsap.from(".contact-sec", {
+  element.from(".contact-sec", {
     opacity: 0,
     y: 200,
     duration: 0.8,
-    delay: 12,
+    // delay: 13,
     stagger: 0.2,
   });
 }
@@ -127,17 +136,28 @@ const overlay = document.getElementById("overlay");
 const closeBtn = document.getElementById("closePopup");
 let popupname = document.querySelector("#popupname");
 let popupprice = document.querySelector("#popupprice");
+let itemImage = document.querySelector("#itemImage");
+let itemqty = document.querySelector("#itemqty");
+//let input = document.querySelector("#itemqty");
+
+// Order buttons functionality
+
 OrderButtons.forEach((button) => {
   button.addEventListener("click", function () {
-    let item = this.closest(".item-1");
+    let cart = getCart();
 
+    let item = this.closest(".item-1");
     let name = item.dataset.name;
     let price = Number(item.dataset.price);
     let image = item.dataset.image;
 
     overlay.classList.add("active");
-    popupname.textContent = `Name: ${name}`;
-    popupprice.textContent = `Price: ${price}`;
+    itemImage.src = `${image}`;
+    itemImage.classList.add("item-image");
+    popupname.innerHTML = `<b>Name</b>: ${name}`;
+    popupprice.innerHTML = `<b>Price</b>: ${price}`;
+
+    //let qty = Number(input.value);
 
     closeBtn.addEventListener("click", () => {
       overlay.classList.remove("active");
