@@ -230,16 +230,11 @@ function displayItem() {
 displayItem();
 // Remove item from cart function
 
-let popoupRemove = document.querySelector("#popoupRemove");
-let popupOrder = document.querySelector("#popupOrder");
-function removeItem(index, itemName) {
+function removeItem(index) {
   let cart = getCart();
   cart.splice(index, 1);
   saveCart(cart);
   displayItem();
   itemCount();
   popupfunction();
-  popupOrder.classList.toggle("remove");
-
-  popoupRemove.innerHTML = `${itemName}Item was removed from Carrt`;
 }

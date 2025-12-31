@@ -667,18 +667,3 @@ footer {
   width: 100px;
   height: 100px;
 }
-
-.popup-order {
-  width: 200px;
-  height: 35px;
-  border-radius: 4px;
-  background-color: #00000093;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  position: absolute;
-  top: 120px;
-  right: 20px;
-}
-.popup-order.remove {
-  display: block;
-}
