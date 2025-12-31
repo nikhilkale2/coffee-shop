@@ -233,6 +233,7 @@
       <!-- Book your table section -->
 
       <section class="">
+        <h1 class="Book-h1">Book You Table</h1>
         <div class="Book-table">
           <div class="Book-table-img coffe-table-book">
             <img src="coffee-table.jpg" alt="" />
@@ -240,13 +241,19 @@
           <div class="Book-table-form coffe-table-book">
             <h1>Book Your Table</h1>
             <form action="">
-              <input type="text" placeholder="Enter your name" id="" />
+              <input type="text" placeholder="Enter your name" id="" required />
               <input
                 type="number"
                 placeholder="Enter your Mobile number"
                 id=""
+                required
               />
-              <input type="number" placeholder="Enter How many people" id="" />
+              <input
+                type="number"
+                placeholder="Enter How many people"
+                id=""
+                required
+              />
               <button>Book Now</button>
             </form>
           </div>
@@ -370,15 +377,22 @@
           </div>
           <div class="contact-form contact-sec">
             <form action="">
-              <input type="text" placeholder="Enter your name" id="inputName" />
+              <input
+                type="text"
+                placeholder="Enter your name"
+                id="inputName"
+                required
+              />
               <input
                 type="email"
                 placeholder="Enter your Email"
                 id="inputName"
+                required
               />
               <textarea
                 placeholder="Enter your message"
                 id="message"
+                required
               ></textarea>
               <button>Submit</button>
             </form>
@@ -412,7 +426,6 @@
         <img src="" alt="" id="itemImage" />
         <p id="popupname"></p>
         <p id="popupprice"></p>
-
         <button id="closePopup" class="close-btn">Close</button>
       </div>
     </div>

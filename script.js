@@ -1,21 +1,18 @@
 // Locomotive Scroll Initialization
 
-// const { use } = require("react");
-
 const scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
 });
 
 // GSAP Animation for Hero and About section
-function animateHeroabout() {
+function animatedeWebsite() {
   const element = gsap.timeline();
   // Hero section animation
   element.from(".hero-section", {
     opacity: 0,
     y: -400,
     duration: 1,
-    delay: 1,
   });
 
   // order page section styling
@@ -79,7 +76,7 @@ function animateHeroabout() {
   });
 }
 
-animateHeroabout();
+animatedeWebsite();
 
 // Navbar code working
 let MenuBar = document.querySelector("#MenuBar");
@@ -138,35 +135,35 @@ let popupname = document.querySelector("#popupname");
 let popupprice = document.querySelector("#popupprice");
 let itemImage = document.querySelector("#itemImage");
 let itemqty = document.querySelector("#itemqty");
-//let input = document.querySelector("#itemqty");
 
 // Order buttons functionality
+let selectedItem = null;
 
 OrderButtons.forEach((button) => {
   button.addEventListener("click", function () {
-    let cart = getCart();
-
-    let item = this.closest(".item-1");
-    let name = item.dataset.name;
-    let price = Number(item.dataset.price);
-    let image = item.dataset.image;
+    selectedItem = this.closest(".item-1");
+    let name = selectedItem.dataset.name;
+    let price = Number(selectedItem.dataset.price);
+    let image = selectedItem.dataset.image;
 
     overlay.classList.add("active");
     itemImage.src = `${image}`;
     itemImage.classList.add("item-image");
     popupname.innerHTML = `<b>Name</b>: ${name}`;
     popupprice.innerHTML = `<b>Price</b>: ${price}`;
-
-    //let qty = Number(input.value);
-
-    closeBtn.addEventListener("click", () => {
-      overlay.classList.remove("active");
-    });
-
-    addToCart(name, price, image);
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  closeBtn.addEventListener("click", () => {
+    overlay.classList.remove("active");
+    addToCart(
+      selectedItem.dataset.name,
+      Number(selectedItem.dataset.price),
+      selectedItem.dataset.image
+    );
+  });
+});
 function addToCart(name, price, image) {
   let cart = getCart();
 
@@ -217,7 +214,7 @@ function displayItem() {
     let itemBtn = document.createElement("button");
     itemBtn.classList.add("itemBtn");
     itemBtn.innerText = "Cancle";
-    itemBtn.addEventListener("click", () => removeItem(index));
+    itemBtn.addEventListener("click", () => removeItem(index, itemName));
 
     container.appendChild(itemIndexP);
     container.appendChild(itemName);
@@ -233,11 +230,16 @@ function displayItem() {
 displayItem();
 // Remove item from cart function
 
-function removeItem(index) {
+let popoupRemove = document.querySelector("#popoupRemove");
+let popupOrder = document.querySelector("#popupOrder");
+function removeItem(index, itemName) {
   let cart = getCart();
   cart.splice(index, 1);
   saveCart(cart);
   displayItem();
   itemCount();
   popupfunction();
+  popupOrder.classList.toggle("remove");
+
+  popoupRemove.innerHTML = `${itemName}Item was removed from Carrt`;
 }

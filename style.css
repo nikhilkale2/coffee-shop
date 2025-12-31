@@ -247,6 +247,13 @@ a:hover .heart {
   background: linear-gradient(145deg, #00ffff, #7fffd4, #00bfff, #ffffff);
   padding: 30px;
 }
+.Book-h1 {
+  background-color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .Book-table-img img {
   width: 500px;
   height: 500px;
@@ -659,4 +666,19 @@ footer {
 .item-image {
   width: 100px;
   height: 100px;
+}
+
+.popup-order {
+  width: 200px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #00000093;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: absolute;
+  top: 120px;
+  right: 20px;
+}
+.popup-order.remove {
+  display: block;
 }

@@ -3,6 +3,7 @@
     height: 100px;
     padding: 10px 20px;
     margin-bottom: 50px;
+    z-index: 500;
   }
   body {
     width: 100%;
@@ -14,7 +15,8 @@
   }
   nav a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 21px;
+    letter-spacing: 2px;
     font-family: "Sour Gummy", sans-serif;
     color: white;
     transition: all 0.6s ease-out;
@@ -27,19 +29,21 @@
   .show {
     display: none;
   }
+
   .show.add {
-    display: block;
     display: none;
     display: flex;
     flex-direction: column;
-    background-color: green;
-    position: absolute;
-    top: 100px;
-    width: 350px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    padding: 10px 10px;
+    padding-top: 120px;
+    padding-left: 50px;
+    background-color: #00000080;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 100vh;
+    width: 280px;
+    position: fixed;
+    left: 0;
+    top: 0;
   }
   .order div {
     background-color: yellow;
@@ -388,10 +392,13 @@
     left: 0px;
     width: 500px;
     height: 100vh;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 500;
     justify-content: center;
     padding: 0 25px;
   }
+
   .order div {
     background-color: yellow;
     color: black;
