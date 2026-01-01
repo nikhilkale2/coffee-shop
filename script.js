@@ -247,11 +247,9 @@ function Removepopup(index) {
   if (ispopup) {
     popupOrder.style.display = "block";
     popoupRemove.innerHTML = `removed from cart`;
-    ispopup = false;
 
     setTimeout(() => {
       popupOrder.style.display = "none";
     }, 800);
-    ispopup = true;
   }
 }
