@@ -13,7 +13,6 @@ function animatedeWebsite() {
     opacity: 0,
     y: -500,
     duration: 1.1,
-    delay: 0.7,
   });
 
   // order page section styling
@@ -237,19 +236,19 @@ function removeItem(index) {
   saveCart(cart);
   displayItem();
   itemCount();
-  Removepopup(index);
+  Removepopup();
 }
 
 let popupOrder = document.querySelector("#popupOrder");
 let popoupRemove = document.querySelector("#popoupRemove");
 let ispopup = true;
-function Removepopup(index) {
+function Removepopup() {
   if (ispopup) {
     popupOrder.style.display = "block";
     popoupRemove.innerHTML = `removed from cart`;
 
     setTimeout(() => {
       popupOrder.style.display = "none";
-    }, 800);
+    }, 900);
   }
 }
