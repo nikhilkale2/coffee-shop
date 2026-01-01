@@ -11,8 +11,9 @@ function animatedeWebsite() {
   // Hero section animation
   element.from(".hero-section", {
     opacity: 0,
-    y: -400,
-    duration: 1,
+    y: -500,
+    duration: 1.1,
+    delay: 0.7,
   });
 
   // order page section styling
@@ -38,7 +39,7 @@ function animatedeWebsite() {
   element.from(".item-1", {
     opacity: 0,
     y: -450,
-    duration: 1.1,
+    duration: 1.2,
     stagger: 0.3,
     // delay: 3.9,
   });
@@ -236,5 +237,21 @@ function removeItem(index) {
   saveCart(cart);
   displayItem();
   itemCount();
-  popupfunction();
+  Removepopup(index);
+}
+
+let popupOrder = document.querySelector("#popupOrder");
+let popoupRemove = document.querySelector("#popoupRemove");
+let ispopup = true;
+function Removepopup(index) {
+  if (ispopup) {
+    popupOrder.style.display = "block";
+    popoupRemove.innerHTML = `removed from cart`;
+    ispopup = false;
+
+    setTimeout(() => {
+      popupOrder.style.display = "none";
+    }, 800);
+    ispopup = true;
+  }
 }

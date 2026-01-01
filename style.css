@@ -667,3 +667,24 @@ footer {
   width: 100px;
   height: 100px;
 }
+
+/* Popup image */
+
+#popupOrder {
+  width: 250px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: #00000059;
+  position: absolute;
+  border-radius: 5px;
+  top: 130px;
+  right: 30px;
+  display: none;
+  text-align: center;
+}
+
+#popoupRemove {
+  margin-top: 8px;
+  font-size: 19px;
+  color: white;
+}
