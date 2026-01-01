@@ -164,6 +164,17 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   });
 });
+
+// Popup cancel function
+
+function cancelPopup() {
+  let CancelPopBtn = document.querySelector("#CancelPopBtn");
+  CancelPopBtn.addEventListener("click", () => {
+    overlay.classList.remove("active");
+  });
+}
+cancelPopup();
+
 function addToCart(name, price, image) {
   let cart = getCart();
 
