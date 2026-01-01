@@ -163,6 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
       selectedItem.dataset.image
     );
   });
+  cancelPopup();
 });
 
 // Popup cancel function
@@ -173,7 +174,6 @@ function cancelPopup() {
     overlay.classList.remove("active");
   });
 }
-cancelPopup();
 
 function addToCart(name, price, image) {
   let cart = getCart();
