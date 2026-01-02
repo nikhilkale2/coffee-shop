@@ -128,11 +128,13 @@
     flex-direction: column;
     justify-content: center;
   }
+  .Book-h1 {
+    font-size: 40px;
+  }
   .Book-table-img img {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    margin-bottom: 25px;
+    width: 360px;
+    height: 360px;
+    margin-right: 8px;
   }
   .Book-table-info {
     max-width: 550px;
@@ -326,7 +328,7 @@
     font-family: "Delius Swash Caps", cursive;
   }
   .itemIndex {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 900;
   }
   .itemBtn {
@@ -592,8 +594,7 @@
   .Book-table {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     padding: 20px;
     width: 100%;
   }
@@ -602,10 +603,6 @@
     height: 500px;
     border-radius: 5%;
     margin-bottom: 30px;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    -o-border-radius: 5%;
   }
   .Book-table-info {
     max-width: 550px;

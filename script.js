@@ -256,7 +256,7 @@ let ispopup = true;
 function Removepopup() {
   if (ispopup) {
     popupOrder.style.display = "block";
-    popoupRemove.innerHTML = `Delete from cart`;
+    popoupRemove.innerHTML = `Cancel the order`;
 
     setTimeout(() => {
       popupOrder.style.display = "none";

@@ -242,7 +242,7 @@ a:hover .heart {
 
 .Book-table {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background: linear-gradient(145deg, #00ffff, #7fffd4, #00bfff, #ffffff);
   padding: 30px;
@@ -257,11 +257,6 @@ a:hover .heart {
 .Book-table-img img {
   width: 500px;
   height: 500px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
 }
 .Book-table-info {
   max-width: 550px;
@@ -270,13 +265,14 @@ a:hover .heart {
 .Book-table-form h1 {
   font-size: 60px;
   font-family: "Yesteryear", cursive;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .Book-table-form {
   box-shadow: 0 0 40px 8px deepskyblue;
   padding: 20px;
   text-align: center;
+  height: 503px;
 }
 
 /* menu section start */
@@ -586,7 +582,8 @@ footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .itemIndex {
-  font-size: 18px;
+  font-size: 20px;
+  color: red;
 }
 .itemBtn {
   width: 180px;
@@ -631,15 +628,17 @@ footer {
   justify-content: center;
   align-items: center;
   background: white;
-  padding: 25px;
-  width: 320px;
+  padding: 20px;
+  width: 260px;
   border-radius: 10px;
   text-align: center;
   transform: scale(0.7);
   transition: 0.3s ease;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
 }
 
 /* Active popup */
@@ -671,8 +670,8 @@ footer {
 /* Cancel popup button */
 .popup-cancel {
   position: relative;
-  bottom: 235px;
-  left: 142px;
+  bottom: 263px;
+  left: 112px;
 }
 .popup-cancel i {
   font-size: 25px;
@@ -693,6 +692,7 @@ footer {
   right: 30px;
   display: none;
   text-align: center;
+  z-index: 300;
 }
 
 #popoupRemove {
