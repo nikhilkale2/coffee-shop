@@ -353,6 +353,17 @@
     font-size: 23px;
     font-weight: 700;
   }
+  .empty-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+  }
+  .empty-img img {
+    width: 100vw;
+  }
 }
 
 /*====== TABLET MEDIA QUERY STYLING ======*/
@@ -413,7 +424,7 @@
     align-items: center;
     position: relative;
     top: 140px;
-    left: 20px;
+    gap: 20px;
     text-align: center;
   }
   .hero-section h1 {
@@ -449,7 +460,6 @@
     width: 100%;
     margin-top: 90px;
     align-items: center;
-    margin-left: 10px;
   }
   .about-img {
     width: 500px;
@@ -484,7 +494,6 @@
   .menu-section {
     padding: 30px 20px;
     width: 100%;
-    margin-left: 10px;
   }
   .menu-section .menu-h1 {
     margin-bottom: 60px;
@@ -529,8 +538,6 @@
     width: 100%;
     background-color: white;
     padding: 20px 20px;
-    margin-left: 10px;
-    margin-top: 20px;
   }
   .user-section .user-h1 {
     font-size: 40px;
@@ -541,6 +548,7 @@
     display: flex;
     gap: 50px;
     padding: 14px 10px;
+    margin-left: 30px;
   }
 
   .user-opinion figure {
@@ -557,7 +565,10 @@
 
   .gallery-section {
     padding: 20px 12px;
-    /* margin-left: 10px; */
+    margin-top: 1px;
+    background-color: red;
+    width: 100%;
+    position: relative;
   }
 
   .gallery-section h1 {
@@ -570,9 +581,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 30px; */
-    /* margin-left: 10px; */
-    margin-top: 100px;
+    position: relative;
+    right: 70px;
   }
   .gallery-img .img-1 {
     width: 100%;
@@ -595,6 +605,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     width: 100%;
   }
@@ -615,16 +626,27 @@
   }
 
   .Book-table-form {
-    box-shadow: 0 0 40px 8px deepskyblue;
+    box-shadow: none;
     padding: 20px;
     text-align: center;
   }
 
+  /* Order.html pages empty cart image */
+  .empty-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+  }
+  .empty-img img {
+    width: 90vw;
+  }
   /* Contact Section Start */
 
-  .contact-section {
+  .cntact-section {
     padding: 20px 20px;
-    margin-left: 10px;
   }
 
   .contact-section h1 {
@@ -679,7 +701,6 @@
 
   footer {
     height: 70px;
-    margin-left: 10px;
   }
   .footer-text p {
     font-size: 20px;

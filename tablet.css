@@ -18,7 +18,7 @@
     display: none;
   }
   nav a {
-    font-size: 37px;
+    font-size: 35px;
     margin-left: 30px;
   }
   nav a:hover {
@@ -45,28 +45,28 @@
   /* Hero section start */
 
   .hero-img {
-    width: 900px;
-    height: 900px;
+    width: 1000px;
+    height: 1000px;
   }
 
   .hero-section h1 {
-    font-size: 95px;
+    font-size: 100px;
   }
 
   .hero-section h4 {
-    font-size: 60px;
+    font-size: 65px;
   }
 
   .hero-section p {
     max-width: 560px;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 40px;
   }
 
   .hero-section .hero-btn button {
-    width: 240px;
-    height: 65px;
-    font-size: 25px;
+    width: 260px;
+    height: 75px;
+    font-size: 30px;
     transition: all 0.5s ease-in-out 0s;
   }
 
@@ -75,14 +75,14 @@
     justify-content: space-evenly;
   }
   .about-img {
-    width: 700px;
-    height: 700px;
+    width: 900px;
+    height: 900px;
   }
 
   .about-page p {
-    max-width: 740px;
-    font-size: 29px;
-    line-height: 40px;
+    max-width: 800px;
+    font-size: 32px;
+    line-height: 42px;
   }
   .about-page h1 {
     margin-bottom: 40px;
@@ -144,10 +144,18 @@
 
   .Book-table {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     width: 100%;
+  }
+  .Book-table-form {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
   }
   .Book-table-img img {
     width: 900px;
@@ -173,7 +181,7 @@
     display: flex;
     gap: 60px;
     overflow-x: visible;
-    margin-left: 20px;
+    margin-left: 220px;
     margin-top: 70px;
   }
 

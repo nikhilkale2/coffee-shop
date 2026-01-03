@@ -700,3 +700,11 @@ footer {
   font-size: 19px;
   color: white;
 }
+.empty-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+}

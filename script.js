@@ -9,10 +9,11 @@ const scroll = new LocomotiveScroll({
 function animatedeWebsite() {
   const element = gsap.timeline();
   // Hero section animation
-  element.from(".hero-section", {
+  element.from(".hero-section .Hero", {
     opacity: 0,
-    y: -500,
+    y: -800,
     duration: 1.1,
+    stagger: 0.4,
   });
 
   // order page section styling
@@ -239,6 +240,20 @@ function displayItem() {
 }
 
 displayItem();
+
+document.addEventListener("DOMContentLoaded", () => {
+  function emptycart() {
+    let emptyimg = document.querySelector("#emptyImg");
+    let cart = getCart();
+    if (cart.length === 0) {
+      emptyimg.style.display = "block";
+    } else {
+      emptyimg.style.display = "none";
+    }
+  }
+  emptycart();
+});
+
 // Remove item from cart function
 
 function removeItem(index) {
