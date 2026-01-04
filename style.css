@@ -553,6 +553,9 @@ footer {
   padding: 8px;
   margin-bottom: 350px;
   margin-top: 20px;
+  font-family: "Playball", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Add to cart section */
@@ -705,6 +708,5 @@ footer {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 15%;
-  left: 35%;
+  inset: 0;
 }

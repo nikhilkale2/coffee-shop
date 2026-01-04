@@ -22,8 +22,7 @@ function animatedeWebsite() {
     opacity: 0,
     y: 500,
     scale: 2,
-    duration: 1.2,
-    // delay: 0.4,
+    duration: 1,
   });
 
   // About Section Animation
@@ -32,7 +31,6 @@ function animatedeWebsite() {
     y: -250,
     duration: 1,
     stagger: 0.4,
-    // delay: 1.9,
   });
 
   // Menu Section Animation
@@ -41,7 +39,6 @@ function animatedeWebsite() {
     y: -450,
     duration: 1.2,
     stagger: 0.3,
-    // delay: 3.9,
   });
 
   element.from(".coffe-table-book", {
@@ -49,30 +46,29 @@ function animatedeWebsite() {
     y: 300,
     stagger: 0.5,
     duration: 1.2,
-    // delay: 7.5,
   });
 
+  // Users section
   element.from(".users", {
     opacity: 0,
     y: -500,
     duration: 0.9,
     stagger: 0.4,
-    // delay: 8.4,
   });
 
+  // Gallery section
   element.from(".img-1", {
     opacity: 0,
     y: 500,
-    duration: 1.9,
+    duration: 1,
     stagger: 0.4,
-    // delay: 10,
   });
-
+  // Contact section
   element.from(".contact-sec", {
     opacity: 0,
     y: 200,
     duration: 0.8,
-    // delay: 13,
+
     stagger: 0.2,
   });
 }
@@ -226,7 +222,7 @@ function displayItem() {
     let itemBtn = document.createElement("button");
     itemBtn.classList.add("itemBtn");
     itemBtn.innerText = "Cancle";
-    itemBtn.addEventListener("click", () => removeItem(index, itemName));
+    itemBtn.addEventListener("click", () => removeItem(index));
 
     container.appendChild(itemIndexP);
     container.appendChild(itemName);
