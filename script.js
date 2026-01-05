@@ -1,7 +1,8 @@
 // Locomotive Scroll Initialization
-
+const main = document.querySelector("#main");
+//  document.querySelector("#main")
 const scroll = new LocomotiveScroll({
-  el: document.querySelector("#main"),
+  el: main,
   smooth: true,
 });
 
@@ -18,7 +19,7 @@ function animatedeWebsite() {
 
   // order page section styling
 
-  element.from("#cart-items", {
+  gsap.from("#cart-items", {
     opacity: 0,
     y: 500,
     scale: 2,
@@ -127,7 +128,7 @@ itemCount();
 
 let OrderButtons = document.querySelectorAll(".orderBtn");
 const overlay = document.getElementById("overlay");
-const closeBtn = document.getElementById("closePopup");
+let closeBtn = document.getElementById("closePopup");
 let popupname = document.querySelector("#popupname");
 let popupprice = document.querySelector("#popupprice");
 let itemImage = document.querySelector("#itemImage");
@@ -193,7 +194,6 @@ function displayItem() {
   let cartContainer = document.querySelector("#cart-items");
 
   cartContainer.innerHTML = "";
-
   cart.forEach((item, index) => {
     let container = document.createElement("div");
     container.classList.add("container");
@@ -220,7 +220,7 @@ function displayItem() {
     itemqty.innerText = `${item.quantity}`;
 
     let itemBtn = document.createElement("button");
-    itemBtn.classList.add("itemBtn");
+    itemBtn.classList.add("ItemBtn");
     itemBtn.innerText = "Cancle";
     itemBtn.addEventListener("click", () => removeItem(index));
 
@@ -237,18 +237,16 @@ function displayItem() {
 
 displayItem();
 
-document.addEventListener("DOMContentLoaded", () => {
-  function emptycart() {
-    let emptyimg = document.querySelector("#emptyImg");
-    let cart = getCart();
-    if (cart.length === 0) {
-      emptyimg.style.display = "block";
-    } else {
-      emptyimg.style.display = "none";
-    }
+function emptycart() {
+  let emptyimg = document.querySelector("#emptyImg");
+  let cart = getCart();
+  if (cart.length === 0) {
+    emptyimg.style.display = "block";
+  } else {
+    emptyimg.style.display = "none";
   }
-  emptycart();
-});
+}
+emptycart();
 
 // Remove item from cart function
 
@@ -259,6 +257,7 @@ function removeItem(index) {
   displayItem();
   itemCount();
   Removepopup();
+  console.log("Item clicked");
 }
 
 let popupOrder = document.querySelector("#popupOrder");
@@ -267,7 +266,7 @@ let ispopup = true;
 function Removepopup() {
   if (ispopup) {
     popupOrder.style.display = "block";
-    popoupRemove.innerHTML = `Cancel the order`;
+    popoupRemove.innerHTML = `Cancel the order ❌`;
 
     setTimeout(() => {
       popupOrder.style.display = "none";

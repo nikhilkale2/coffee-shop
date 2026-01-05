@@ -353,14 +353,10 @@
     font-size: 23px;
     font-weight: 700;
   }
-  .empty-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    inset: 0;
-  }
-  .empty-img img {
+  #emptyImg {
+    position: relative;
+    bottom: 250px;
+    left: 15px;
     width: 350px;
   }
 }
@@ -631,16 +627,12 @@
   }
 
   /* Order.html pages empty cart image */
-  .empty-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    inset: 0;
+  #emptyImg {
+    position: relative;
+    bottom: 100px;
+    left: 180px;
   }
-  .empty-img img {
-    width: 600px;
-  }
+
   /* Contact Section Start */
 
   .cntact-section {
@@ -693,6 +685,13 @@
   #message {
     height: 150px;
     font-size: 22px;
+  }
+
+  /*====> Order page styling <====*/
+  .order-h1 {
+    padding: 8px;
+    margin-bottom: 30px;
+    margin-top: 120px;
   }
 
   /* Footer sectio start */

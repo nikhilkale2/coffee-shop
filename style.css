@@ -588,7 +588,7 @@ footer {
   font-size: 20px;
   color: red;
 }
-.itemBtn {
+.ItemBtn {
   width: 180px;
   height: 40px;
   border: 1px solid black;
@@ -598,7 +598,7 @@ footer {
   cursor: pointer;
   transition: all 0.5s ease-in-out 0s;
 }
-.itemBtn:hover {
+.ItemBtn:hover {
   background-color: black;
   color: white;
 }
@@ -703,10 +703,8 @@ footer {
   font-size: 19px;
   color: white;
 }
-.empty-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  inset: 0;
+#emptyImg {
+  position: relative;
+  bottom: 300px;
+  left: 500px;
 }
