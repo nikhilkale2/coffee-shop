@@ -134,6 +134,8 @@ let popupprice = document.querySelector("#popupprice");
 let itemImage = document.querySelector("#itemImage");
 let itemqty = document.querySelector("#itemqty");
 
+let inputQty = document.querySelector("#inputQty");
+
 // Order buttons functionality
 let selectedItem = null;
 
@@ -155,11 +157,14 @@ OrderButtons.forEach((button) => {
 document.addEventListener("DOMContentLoaded", () => {
   closeBtn.addEventListener("click", () => {
     overlay.classList.remove("active");
+    let Qty = Number(inputQty.value);
     addToCart(
       selectedItem.dataset.name,
       Number(selectedItem.dataset.price),
-      selectedItem.dataset.image
+      selectedItem.dataset.image,
+      Qty
     );
+    document.querySelector("#inputQty").value = "";
   });
   cancelPopup();
 });
@@ -173,15 +178,17 @@ function cancelPopup() {
   });
 }
 
-function addToCart(name, price, image) {
+function addToCart(name, price, image, Qty) {
   let cart = getCart();
 
   let existingitem = cart.find((item) => item.name === name);
 
+  if (!Qty) return;
+
   if (existingitem) {
-    existingitem.quantity += 1;
+    existingitem.quantity += Qty;
   } else {
-    cart.push({ name, price, image, quantity: 1 });
+    cart.push({ name, price, image, quantity: Qty });
   }
   saveCart(cart);
   itemCount();
@@ -191,7 +198,7 @@ function addToCart(name, price, image) {
 
 function displayItem() {
   let cart = getCart();
-  let cartContainer = document.querySelector("#cart-items");
+  let cartContainer = document.querySelector("#cartItems");
 
   cartContainer.innerHTML = "";
   cart.forEach((item, index) => {
@@ -234,9 +241,9 @@ function displayItem() {
     scroll.update();
   });
 }
-
 displayItem();
 
+// to show empty cart image
 function emptycart() {
   let emptyimg = document.querySelector("#emptyImg");
   let cart = getCart();
@@ -260,6 +267,7 @@ function removeItem(index) {
   console.log("Item clicked");
 }
 
+// Toast message function
 let popupOrder = document.querySelector("#popupOrder");
 let popoupRemove = document.querySelector("#popoupRemove");
 let ispopup = true;

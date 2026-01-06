@@ -633,6 +633,7 @@ footer {
   background: white;
   padding: 20px;
   width: 260px;
+  height: 290px;
   border-radius: 10px;
   text-align: center;
   transform: scale(0.7);
@@ -669,12 +670,18 @@ footer {
   width: 100px;
   height: 100px;
 }
-
+#inputQty {
+  padding: 7px 15px;
+  margin-top: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+}
 /* Cancel popup button */
 .popup-cancel {
   position: relative;
-  bottom: 263px;
-  left: 112px;
+  bottom: 258px;
+  left: 117px;
 }
 .popup-cancel i {
   font-size: 25px;
