@@ -91,6 +91,17 @@
   .hero-btn {
     display: flex;
   }
+  .hero-section .hero-btn .hero-button:active {
+    background-color: transparent;
+    box-shadow: 0 0 7px 3px #4f0909;
+  }
+
+  .hero-section .hero-button-2:active {
+    background-color: orange;
+    color: white;
+    box-shadow: 0 0 7px 3px #4f0909;
+  }
+
   .hero-img {
     width: 370px;
     height: 400px;
@@ -178,6 +189,10 @@
     position: relative;
     margin-left: 40px;
   }
+  .rating button:active {
+    color: white;
+    background-color: #007bff;
+  }
 
   /* User Section style */
   .user-section {
@@ -231,6 +246,9 @@
     width: 350px;
     height: 350px;
     overflow: hidden;
+  }
+  .img-1:active img {
+    transform: scale(1.2);
   }
 
   /* Contact Section Start */
@@ -341,7 +359,7 @@
     cursor: pointer;
     transition: all 0.5s ease-in-out 0s;
   }
-  .itemBtn:hover {
+  .itemBtn:active {
     background-color: black;
     color: white;
   }
@@ -382,7 +400,7 @@
     margin-left: 50px;
     padding: 10px 20px;
   }
-  nav a:hover {
+  nav a:active {
     background-color: green;
     border-radius: 20px;
     transition: all 0.5s ease-in-out 0s;
@@ -441,6 +459,16 @@
     border: 1px solid black;
     transition: all 0.5s ease-in-out 0s;
   }
+  .hero-section .hero-btn .hero-button:active {
+    background-color: transparent;
+    box-shadow: 0 0 7px 3px #4f0909;
+  }
+
+  .hero-section .hero-button-2:active {
+    background-color: orange;
+    color: white;
+    box-shadow: 0 0 7px 3px #4f0909;
+  }
 
   .hero-img {
     width: 450px;
@@ -475,13 +503,17 @@
     font-size: 40px;
     text-shadow: 0 0 10px 10px black;
   }
-  .about-icons i:hover {
+  .about-icons i:active {
     text-shadow: 0 0 10px 10px gold;
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
+  }
+  .rating button:active {
+    color: white;
+    background-color: #007bff;
   }
 
   /* menu section start */
@@ -589,7 +621,7 @@
     height: 100%;
     transition: all 0.8s ease-in-out;
   }
-  .img-1:hover img {
+  .img-1:active img {
     transform: scale(1.2);
   }
 
