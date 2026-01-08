@@ -19,7 +19,7 @@ function animatedeWebsite() {
 
   // order page section styling
 
-  gsap.from("#cart-items", {
+  gsap.from("#cartItems", {
     opacity: 0,
     y: 500,
     scale: 2,
@@ -133,7 +133,7 @@ let popupname = document.querySelector("#popupname");
 let popupprice = document.querySelector("#popupprice");
 let itemImage = document.querySelector("#itemImage");
 let itemqty = document.querySelector("#itemqty");
-
+let confirmMsg = document.querySelector("#confirmMsg");
 let inputQty = document.querySelector("#inputQty");
 
 // Order buttons functionality
@@ -156,14 +156,16 @@ OrderButtons.forEach((button) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   closeBtn.addEventListener("click", () => {
-    overlay.classList.remove("active");
     let Qty = Number(inputQty.value);
+    if (!Qty) return;
     addToCart(
       selectedItem.dataset.name,
       Number(selectedItem.dataset.price),
       selectedItem.dataset.image,
       Qty
     );
+    overlay.classList.remove("active");
+
     document.querySelector("#inputQty").value = "";
   });
   cancelPopup();
@@ -178,6 +180,7 @@ function cancelPopup() {
   });
 }
 
+// Add to cart function
 function addToCart(name, price, image, Qty) {
   let cart = getCart();
 

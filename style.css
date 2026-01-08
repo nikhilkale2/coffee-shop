@@ -244,7 +244,7 @@ a:hover .heart {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(145deg, #00ffff, #7fffd4, #00bfff, #ffffff);
+  background-color: #fbd207f5;
   padding: 30px;
 }
 .Book-h1 {
@@ -257,6 +257,11 @@ a:hover .heart {
 .Book-table-img img {
   width: 500px;
   height: 500px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .Book-table-info {
   max-width: 550px;
@@ -269,12 +274,14 @@ a:hover .heart {
 }
 
 .Book-table-form {
-  box-shadow: 0 0 40px 8px deepskyblue;
+  box-shadow: inset 2px 2px 40px #fbd207f5, inset -2px -2px 40px #fbd207f5;
   padding: 20px;
   text-align: center;
   height: 503px;
 }
-
+.Book-table-form input {
+  background-color: aliceblue;
+}
 /* menu section start */
 
 .menu-section {
