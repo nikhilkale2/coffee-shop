@@ -72,11 +72,15 @@ nav a:hover {
   color: white;
   cursor: pointer;
   transition: all 0.5s;
-  text-shadow: 4px 4px 10px pink, -4px -4px 10px pink;
+  text-shadow:
+    4px 4px 10px pink,
+    -4px -4px 10px pink;
 }
 a:hover .heart {
   color: deeppink;
-  text-shadow: 4px 4px 10px white, -4px -4px 10px white;
+  text-shadow:
+    4px 4px 10px white,
+    -4px -4px 10px white;
 }
 .order {
   display: flex;
@@ -274,7 +278,9 @@ a:hover .heart {
 }
 
 .Book-table-form {
-  box-shadow: inset 2px 2px 40px #fbd207f5, inset -2px -2px 40px #fbd207f5;
+  box-shadow:
+    inset 2px 2px 40px #fbd207f5,
+    inset -2px -2px 40px #fbd207f5;
   padding: 20px;
   text-align: center;
   height: 503px;
@@ -687,8 +693,8 @@ footer {
 /* Cancel popup button */
 .popup-cancel {
   position: relative;
-  bottom: 258px;
-  left: 117px;
+  bottom: 255px;
+  left: 115px;
 }
 .popup-cancel i {
   font-size: 25px;
