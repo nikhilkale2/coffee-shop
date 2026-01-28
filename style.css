@@ -288,12 +288,13 @@ a:hover .heart {
 .Book-table-form input {
   background-color: aliceblue;
 }
+
 /* menu section start */
 
 .menu-section {
   background-color: black;
   color: white;
-  padding: 30px 80px;
+  padding: 30px 65px;
   text-align: center;
   width: 100%;
 }
@@ -312,7 +313,7 @@ a:hover .heart {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 40px;
 }
 .item-1 figure {
   width: 400px;
